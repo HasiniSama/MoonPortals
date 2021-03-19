@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    //[SerializeField]private Transform groundCheckTransform = null;
     public bool isGrounded = true;  
     private bool jumpKeyWasPressed;
     private float horizontalInput;
@@ -28,11 +27,6 @@ public class player : MonoBehaviour
         {
             return;
         }
-        /* 
-        if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f).length == 1)
-        {
-            return;
-        }*/
 
         if (jumpKeyWasPressed)
         {
